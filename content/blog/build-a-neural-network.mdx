@@ -1,0 +1,38 @@
+---
+title: Build a Neural Network using PyTorch
+description: Build a Neural Network using PyTorch
+date: 2024-05-08
+published: true
+---
+
+## Build Your First Neural Network using PyTorch
+<Callout type="danger">
+  Hello Callout
+</Callout>
+
+## link
+```python
+  # Neural Network Models
+from torch import nn
+
+class Net(nn.Module):
+  # weight and bias are randomly initialised by PyTorch 
+  def __init__(self):
+    super.__init__()
+    # num of in_features, num of out_features
+    self.first_layer = nn.Linear(4, 6)
+    self.second_layer = nn.Linear(6, 6)
+    self.final_layer = nn.Linear(6, 2)
+
+  # every subclass of nn.Module needs to implement a forward method
+  def forward(self, x):
+    # nn.Linear is a subclass of nn.Module
+    # thus nn.Linear has a forward method that was written by Pytorch
+    # self.first_layer.forward(x) is the same as self.first_layer(x)
+    # output of first layer (x) is passed to second layer (x)
+    # output of second layer (x) is passed to final layer (x
+    x = self.first_layer(x)
+    x = self.second_layer(x)
+    x = self.final_layer(x)
+    return x
+```
