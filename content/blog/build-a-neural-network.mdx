@@ -1,17 +1,24 @@
 ---
 title: Build a Neural Network using PyTorch
-description: Build a Neural Network using PyTorch
-date: 2024-05-08
+description: Build a neural network using Linear Transformation
+date: 2024-05-11
 published: true
 ---
 
-## Build Your First Neural Network using PyTorch
-<Callout type="danger">
-  Hello Callout
+<Callout type="default">
+  We will build a neural network for the following diagram. In the diagram, we have:
+
+  - 4 input features
+  - 2 hidden layers with 6 neurons each
+  - 1 output layer with 2 neurons
 </Callout>
 
-## link
-```python
+
+<Image 
+  src="/network.png"
+  width={500}
+  height={50}/>
+```python showLineNumbers
   # Neural Network Models
 from torch import nn
 
