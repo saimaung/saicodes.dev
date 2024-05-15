@@ -2,6 +2,12 @@ import { posts } from "#site/content"
 import PostItem from "@/components/PostItem";
 import QueryPagination from "@/components/QueryPagination";
 import { sortPosts } from "@/lib/utils";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "S.AI Blog App",
+  description: "Blog posts about Data, AI and more.",
+};
 
 const POSTS_PER_PAGE = 5;
 
