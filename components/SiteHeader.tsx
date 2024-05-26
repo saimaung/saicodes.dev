@@ -26,6 +26,12 @@ const SiteHeader = () => {
                 <span className="sr-only">LinkedIn</span>
               </div>
             </Link>
+            <Link href={siteConfig.links.huggingface} target="_blank" rel="noreferrer">
+              <div className={cn(buttonVariants({variant: "ghost"}), "w-10 px-0 hidden sm:inline-flex")}>
+                <Icons.huggingFace className="h-4 w-4" />
+                <span className="sr-only">HuggingFace</span>
+              </div>
+            </Link>
             <div className="flex gap-2">
               <ModeToggle />
               <MobileNav />

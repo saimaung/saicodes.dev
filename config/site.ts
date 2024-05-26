@@ -8,6 +8,7 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/saimaung',
     linkedin: 'https://www.linkedin.com/in/saiwaimaung/',
+    huggingface: 'https://huggingface.co/saiwaimaung'
   }
 }
 
